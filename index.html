@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+
+		<title>Les Films de Plein Air</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Le Festival des Films de Plein Air est un festival de cinéma GRATUIT qui se déroulera du 05 au 08 Aout 2020 au parc Monceau à PARIS." />
+		<meta name="keyword" content="Festival, Les Films de Plein Air, Cinéma, parc Monceau, Paris, Films d'Auteurs, gratuit"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+		<meta name="google-site-verification" content="M5SSRJXwy9eWhAE7x0Y2XlGGZGTTH9Yb5Or44kBPftA" />
+
+		<!--Balise meta property pour le ref-->
+		<meta property="og:title" content="Festival Les Films de Plein Air">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="http://lesfilmsdepleinair.mathieu-b.fr/">
+		<meta property="og:description" content="Festival des Films de Plein Air, du 05 au 08 août, festival de films d'auteurs, à Paris, au Parc Monceau">
+
+		<!--Feuille de style-->
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+		<link rel="stylesheet" href="bootstrap-4.4.1/dist/css/bootstrap.css" />
+		<link rel="stylesheet" href="css/regular_slick.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+
+	</head>
+
+	<body>
+
+		<!--Header-->
+		<header>
+			<div class="container-fluid">
+				<div class="row entete">
+
+					<div class="col-lg-6 content_logo">
+						<img src="images/logo2.png" alt="logo" id="logo" />
+					</div>
+
+					<!--div logo visible uniquement sur smartphone et tablette-->
+					<div class="col-lg-6 content_logo_smart">
+						<img src="images/logo3.png" alt="logo" id="logo" />
+					</div>
+
+					<div class="col-lg-6 content_search_icones">
+						<div class="row content_search">
+							<div class="col-lg-6 offset-lg-6 search">
+								<div class="input-group">
+									<input type="search" class="form-control" aria-label="recherche" placeholder="Rechercher" />
+									<div class="input-group-append">
+										<button type="submit" class="btn"><img src="images/icones/glyphicons-search.png" alt="rechercher" /></button>
+									</div>
+								</div>
+								<div class="icones_sociaux">
+									<a href="#"><img src="images/icones/facebook.png" alt="facebook" /></a>
+									<a href="#"><img src="images/icones/twitter.png" alt="facebook" /></a>
+									<a href="#"><img src="images/icones/instagram.png" alt="facebook" /></a>
+									<a href="#"><img src="images/icones/youtube.png" alt="facebook" /></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--Menu principal-->
+				<div class="row content_menu">
+					<div class="col-lg-12 menu">
+						<nav id="menu_principal">
+							<ul class="nav justify-content-center nav-pills">
+								<li class="nav-item">
+									<a class="nav-link active" href="index.html">LE FESTIVAL</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="actualites.html">L'ACTUALITE</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="films.html">LES FILMS</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="inscription.html">S'INSCRIRE A UNE SEANCE</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="contact.html">CONTACT</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!--Section 1 - Masterhead-->
+		<section id="masterhead">
+			<div class="container-fluid">
+				<div class="row">
+					<!--Caroussel de trois photos du Masterhead-->
+					<div class="col-xl-9 col-lg-10 col-md-12">
+						<div class="carousel slide carousel-fade" id="mh_carousel" data-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img src="images/festival.jpg" alt="camera" />
+								<!--Caption décalé-->
+									<div class="carousel-caption">
+										<div class="card">
+											<div class="card-body">
+												<h1 class="card-title">FESTIVAL LES FILMS DE PLEIN AIR</h1>
+												<h2>1ère EDITION</h2>
+												<p>Tenez vous prêts... C'est <strong>GRATUIT !!!</strong></p>
+												<p>Ne manquez pas votre rendez-vous cinéma de l'été 2020.</p>
+												<a href="#presentation">EN SAVOIR PLUS...</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<img src="images/photo1.jpg" alt="photo1"/>
+								<!--Caption décalé-->
+									<div class="carousel-caption">
+										<div class="card">
+											<div class="card-body">
+												<h1 class="card-title">SOIREE QUENTIN TARENTINO</h2>
+												<p>Le 06 Août :</p>
+												<div class="card-film">
+													<p>A 18h00</p>
+													<h3>Pulp Fiction</h3>
+												</div>
+												<div class="card-film">
+													<p>A 21h00</p>
+													<h3>Django Unchained</h3>
+												</div>
+												<a href="#">S'INSCRIRE A UNE SEANCE</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<img src="images/photo2.jpg" alt="photo2"/>
+								<!--Caption décalé-->
+									<div class="carousel-caption">
+										<div class="card">
+											<div class="card-body">
+												<h1 class="card-title">2 CHEFS D'OEUVRE DE CLINT EASTWOOD</h2>
+												<p>Le 08 Août :</p>
+												<div class="card-film">
+													<p>A 18h00</p>
+													<h3>Million Dollar Baby</h3>
+												</div>
+												<div class="card-film">
+													<p>A 21h00</p>
+													<h3>Mystic River</h3>
+												</div>
+												<a href="#">S'INSCRIRE A UNE SEANCE</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<ol class="carousel-indicators">
+								<li data-target="#mh_carousel" data-slide-to="0" class="active"></li>
+								<li data-target="#mh_carousel" data-slide-to="1"></li>
+								<li data-target="#mh_carousel" data-slide-to="2"></li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--Section 2 - Présentation-->
+		<section id="presentation">
+			<div class="container-fluid">
+				<div class="card card-group">
+					<div class="card-header">
+						<div class="h1-rouge-vertical"></div>
+						<div class="h1-rouge-horizontal">
+							<h1>LE FESTIVAL</h1>
+							<div class="h1-rouge-h"></div>
+						</div>
+					</div>
+					<div class="card-body presentation">
+						<div class="row">
+							<div class="col-lg-1 p_rouge_vertical">
+								<div class="p_rouge_v"></div>
+							</div> 
+							<div class="col-lg-4 p_presentation">
+								<div class="p1_presentation">
+									<p>Tout juste créé par Jennifer Edwards, l'association <strong>LES FILMS DE PLEIN AIR</strong> organise votre rendez-vous cinématographique de l'été à <em>Paris</em>.</p>
+									<p>Une sélections de films d'auteur vous est proposée <strong>GRATUITEMENT</strong> chaque soir du festival de <em>18h00 à 00h00</em>.</p>
+									<p>Nous sommes limité à <strong>200 places</strong> donc ne tardez pas à vous inscrire pour une séance ou une toute une soirée..!</p>
+									<p>Du <em>05 Août au 08 Août 2020</em> <em>au Parc Monceau</em>.</p>
+								</div>
+								<div class="p2_presentation">
+									<blockquote class="blockquote">
+										<p>"Passionnée par le 7ème art depuis de nombreuses années, j'ai créé l'association <strong>Les Films de Plein Air</strong> pour échanger et partager sur le cinéma d'auteur. Nous nous retrouvons toutes les semaines pour débattre et discuter des dernières sorties. Nous avons donc eu l'idée de créer ce festival pour faire profiter au plus grand nombre notre passion."<footer class="blockquote-footer">Jennifer Edwards</footer>
+										</p>
+									</blockquote>
+								</div>							
+							</div>
+							<div class="col-lg-1 espace"></div>
+							<div class="col-lg-5 img_presentation">
+								<div class="carousel slide" id="carousel_presentation" data-ride="carousel">
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img src="images/parc-monceau.jpg" alt="parc1" />
+											<div class="carousel-caption">
+												<h3>Le Parc Monceau</h3>
+											</div>
+										</div>
+										<div class="carousel-item">
+											<img src="images/parc-monceau2.jpg" alt="parc1" />
+											<div class="carousel-caption">
+												<h3>Le Parc Monceau</h3>
+											</div>
+										</div>
+										<div class="carousel-item">
+											<img src="images/asso.jpg" alt="parc1" />
+											<div class="carousel-caption">
+												<h3>L'association :<br />LES FILMS DE PLEIN AIR</h3>
+											</div>
+										</div>
+									</div>
+									<a class="carousel-control-next" href="#carousel_presentation" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+									<a class="carousel-control-prev" href="#carousel_presentation" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>	
+								</div>
+									
+							</div>
+						</div>
+					</div>
+
+					<!--Dernières actus - 3 cadres-->
+					<div class="card-header">
+						<div class="h3-rouge-horizontal">
+							<h3 class="card-title test">Les dernières actualités...</h3>
+							<div class="h3-rouge-h"></div>
+						</div>
+					</div>
+					<div class="card-body actus">
+						<div class="row">
+							<div class=" col-lg-1 actus-rouge-vertical">
+								<div class="actus-rouge-v"></div>
+							</div>
+							<div class="container_actus col-lg-11">
+								<div class="row">
+									<div class="list_actus col-lg-11">
+										<ul class="list-group list-group-horizontal list_3_actus">
+											<li class="list-group-item actu1">
+												<h3 class="p-2">- 17 mars 2020 -</h3>
+												<p><img src="images/kassovitz.jpg" alt="kassovitz" /></p>
+												<p class="px-2">Mathieu Kassovitz au Festival !!!</p>
+												<p><a href="actualites.html#article1" title="Page de blog">VOIR PLUS...  <img src="images/icones/fleche.png" alt="fleche" class="pb-1" /></a></p> 
+											</li>
+											<li class="list-group-item actu2">
+												<h3 class="p-2">- 28 janvier 2020 -</h3>	
+												<div class="row p_actus2">
+													<div class="col-sm-4"><img src="images/django_mini.jpg" class="film-mini"/></div>
+													<div class="col-sm-4"><img src="images/million_dollar_baby_mini.jpg" class="film-mini"/></div>
+													<div class="col-sm-4"><p class="p-1">Les 2 derniers films dévoilés...</p></div>
+												</div>
+												<p class="p-2"><a href="actualites.html#article2" title="Page de blog">VOIR PLUS...  <img src="images/icones/fleche.png" alt="fleche" class="pb-1" /></a></p> 
+											</li>
+											<li class="list-group-item actu3">
+												<h3 class="p-2">- 12 décembre 2019 -</h3>
+												<p class="p-2">La mairie du 8ème arrondissement de Paris vient de nous donner l'autorisation de projeter au Parc Monceau du 05 au 08 Août 2020 !!!</p>
+												<p class="px-2">C'est parti..!!</p>
+												<p class="p-2"><a href="actualites.html#article3" title="Page de blog">VOIR PLUS...  <img src="images/icones/fleche.png" alt="fleche" class="pb-1" /></a></p> 
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-12">
+										<div class="lien_blog">
+											<a href="actualites.html" title="Toute l'actus du festival">TOUTE L'ACTUALITE DU FESTIVAL</a>
+										</div> 
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--Section 3 - Films-->
+		<section id="films">
+			<div class="container-fluid">
+				
+				<!--Titre et Formulaire-->
+				<div class="row">
+					<div class="col-lg-4 films_titre">
+						<div class="h1-rouge-vertical"></div>
+						<div class="h1-rouge-horizontal">
+							<h1 class="titre_films_large">LES FILMS DU FESTIVAL</h1>
+							<!--Visible uniquement dans les media queries-->
+							<h1 class="titre_films_smart">LES FILMS</h1>
+							<!------->
+							<div class="h1-rouge-h"></div>
+						</div>
+					</div>
+					<div class="col-lg-8 films_formulaire">
+						<form>
+							<div class="form-group">
+
+								<!--Lien vers la page des films-->
+								<div class="btn lien_page_films mr-2">
+									<a href="films.html">TOUS LES FILMS</a>
+								</div>
+							
+								<!--Boutons de tri-->
+								<a href="films.html#05_aout" class="mr-2 date">5 Août</a>
+								<a href="films.html#06_aout" class="mr-2 date">6 Août</a>
+								<a href="films.html#07_aout" class="mr-2 date">7 Août</a>
+								<a href="films.html#08_aout" class="mr-2 date">8 Août</a>
+								<div class="dropdown mr-2">
+									<button class="dropdown-toggle" type="button" id="films_auteurs" data-toggle="dropdown">
+										Auteurs 
+									</button>
+									<div class="dropdown-menu dropdown-menu-right">
+										<a class="dropdown-item" href="#">Guillaume Canet</a>
+										<a class="dropdown-item" href="#">Luc Besson</a>
+										<a class="dropdown-item" href="#">Kim Chapiron</a>
+										<a class="dropdown-item" href="#">Quentin Tarantino</a>
+										<a class="dropdown-item" href="#">Jean Pierre Jeunet</a>
+										<a class="dropdown-item" href="#">Mathieu Kassovitz</a>
+										<a class="dropdown-item" href="#">Stanley Kubrick</a>
+										<a class="dropdown-item" href="#">Clint Eastwood</a>
+									</div>
+								</div>
+								<div class="dropdown">
+									<button class="dropdown-toggle" type="button" id="films_auteurs" data-toggle="dropdown">
+										Genre
+									</button>
+									<div class="dropdown-menu dropdown-menu-right">
+										<a class="dropdown-item" href="#">Comédie</a>
+										<a class="dropdown-item" href="#">Policier</a>
+										<a class="dropdown-item" href="#">Drame</a>
+										<a class="dropdown-item" href="#">Thriller</a>
+										<a class="dropdown-item" href="#">Horreur</a>
+										<a class="dropdown-item" href="#">Western</a>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<!--Slider slick en js pour la liste des films--> 
+				<div class="row pt-4">
+					<div class="col-lg-12 slider_films">
+						<div class="list_films">
+
+							<!--Les petits mouchoirs-->
+						  	<div class="affiche_film">
+						  		<div class="film_content mouchoirs">
+						  			<div class="film_title_content">
+						  				<h3>LE 05 AOUT - 18H00</h3>
+						  			</div>
+						  		<!--div uniquement visible dans les media queries-->
+						  			<div class="film_title_content_smart">
+						  				<h3>LE 05 AOUT - 18H00</h3>
+						  			</div>
+						  		<!------->
+						  			<div class="icone_play">
+						  				<a href="les_petits_mouchoirs.html" title="Détails et synopsis">
+						  					<img src="images/icones/play.png" alt="play" />
+						  				</a>
+						  			</div>
+						  		<!--div uniquement visible dans les media queries-->
+						  			<div class="icone_play_smart">
+						  				<a href="les_petits_mouchoirs.html" title="Détails et synopsis">
+						  					<img src="images/icones/play.png" alt="play" />
+						  				</a>
+						  			</div>
+						  		<!------->
+									<img src="images/les-petits-mouchoirs/les-petits-mouchoirs.jpg" alt="les-petits-mouchoirs" />
+									<div class="content_film_opacity"></div>
+								</div>
+							</div>
+
+							<!--Léon-->
+							<div class="affiche_film">
+								<div class="film_content leon">
+									<div class="film_title_content">
+										<h3>LE 05 AOUT - 20H30</h3>
+						  			</div>
+						  		<!--div uniquement visible dans les media queries-->
+						  			<div class="film_title_content_smart">
+						  				<h3>LE 05 AOUT - 20H30</h3>
+						  			</div>
+						  		<!------->
+						  			<div class="icone_play">
+						  				<a href="leon.html" title="Bande annonce">
+						  					<img src="images/icones/play.png" alt="play" />
+						  				</a>
+						  			</div>
+						  		<!--div uniquement visible dans les media queries-->
+						  			<div class="icone_play_smart">
+						  				<a href="leon.html" title="Détails et synopsis">
+						  					<img src="images/icones/play.png" alt="play" />
+						  				</a>
+						  			</div>
+						  		<!------->
+									<img src="images/leon/leon.jpg" alt="leon" />
+									<div class="content_film_opacity"></div>
+								</div>
+							</div>
+
+							<!--Sheitan-->
+							<div class="affiche_film">
+								<div class="film_content sheitan">
+									<div class="film_title_content">
+										<h3>LE 05 AOUT - 22H30</h3>
+						  			</div>
+						  		<!--div uniquement visible dans les media queries-->
+						  			<div class="film_title_content_smart">
+						  				<h3>LE 05 AOUT - 22H30</h3>
+						  			</div>
+						  		<!------->
+						  			<div class="icone_play">
+						  				<a href="sheitan.html" title="Bande annonce">
+						  					<img src="images/icones/play.png" alt="play" />
+						  				</a>
+						  			</div>
+						  		<!--div uniquement visible dans les media queries-->
+						  			<div class="icone_play_smart">
+						  				<a href="sheitan.html" title="Détails et synopsis">
+						  					<img src="images/icones/play.png" alt="play" />
+						  				</a>
+						  			</div>
+						  		<!------->
+									<img src="images/sheitan/sheitan.jpg" alt="sheitan" />
+									<div class="content_film_opacity"></div>
+								</div>
+							</div>
+
+							<!--Pulp Fiction-->
+							<div class="affiche_film">
+								<div class="film_content pulp-fiction">
+									<div class="film_title_content">
+										<h3>LE 06 AOUT - 18H00</h3>
+						  			</div>
+						  		<!--div uniquement visible dans les media queries-->
+						  			<div class="film_title_content_smart">
+						  				<h3>LE 06 AOUT - 18H00</h3>
+						  			</div>
+						  		<!------->
+						  			<div class="icone_play">
+						  				<a href="pulp-fiction.html" title="Bande annonce">
+						  					<img src="images/icones/play.png" alt="play" />
+						  				</a>
+						  			</div>
+						  		<!--div uniquement visible dans les media queries-->
+						  			<div class="icone_play_smart">
+						  				<a href="pulp-fiction.html" title="Détails et synopsis">
+						  					<img src="images/icones/play.png" alt="play" />
+						  				</a>
+						  			</div>
+						  		<!------->
+									<img src="images/pulp-fiction/pulp-fiction.jpg" alt="pulp-fiction" />
+									<div class="content_film_opacity"></div>
+								</div>
+							</div>
+
+							<!--Django-->
+							<div class="affiche_film">
+								<div class="film_content django">
+									<div class="film_title_content">
+										<h3>LE 06 AOUT - 21H00</h3>
+						  			</div>
+						  		<!--div uniquement visible dans les media queries-->
+						  			<div class="film_title_content_smart">
+						  				<h3>LE 06 AOUT - 21H00</h3>
+						  			</div>
+						  		<!------->
+						  			<div class="icone_play">
+						  				<a href="django.html" title="Bande annonce">
+						  					<img src="images/icones/play.png" alt="play" />
+						  				</a>
+						  			</div>
+						  		<!--div uniquement visible dans les media queries-->
+						  			<div class="icone_play_smart">
+						  				<a href="django.html" title="Détails et synopsis">
+						  					<img src="images/icones/play.png" alt="play" />
+						  				</a>
+						  			</div>
+						  		<!------->
+									<img src="images/django/django.jpg" alt="django" />
+									<div class="content_film_opacity"></div>
+								</div>
+							</div>
+
+							<!--Amélie Poulain-->
+							<div class="affiche_film">
+								<div class="film_content amelie-poulain">
+									<div class="film_title_content">
+										<h3>LE 07 AOUT - 18H00</h3>
+						  			</div>
+						  		<!--div uniquement visible dans les media queries-->
+						  			<div class="film_title_content_smart">
+						  				<h3>LE 07 AOUT - 18H00</h3>
+						  			</div>
+						  		<!------->
+						  			<div class="icone_play">
+						  				<a href="amelie-poulain.html" title="Bande annonce">
+						  					<img src="images/icones/play.png" alt="play" />
+						  				</a>
+						  			</div>
+						  		<!--div uniquement visible dans les media queries-->
+						  			<div class="icone_play_smart">
+						  				<a href="amelie-poulain.html" title="Détails et synopsis">
+						  					<img src="images/icones/play.png" alt="play" />
+						  				</a>
+						  			</div>
+						  		<!------->
+									<img src="images/amelie-poulain/amelie-poulain.jpg" alt="amelie-poulain" />
+									<div class="content_film_opacity"></div>
+								</div>
+							</div>
+
+							<!--La Haine-->
+							<div class="affiche_film">
+								<div class="film_content la-haine">
+									<div class="film_title_content">
+										<h3>LE 07 AOUT - 20h30</h3>
+						  			</div>
+						  		<!--div uniquement visible dans les media queries-->
+						  			<div class="film_title_content_smart">
+						  				<h3>LE 07 AOUT - 20h30</h3>
+						  			</div>
+						  		<!------->
+						  			<div class="icone_play">
+						  				<a href="la-haine.html" title="Bande annonce">
+						  					<img src="images/icones/play.png" alt="play" />
+						  				</a>
+						  			</div>
+						  		<!--div uniquement visible dans les media queries-->
+						  			<div class="icone_play_smart">
+						  				<a href="la-haine.html" title="Détails et synopsis">
+						  					<img src="images/icones/play.png" alt="play" />
+						  				</a>
+						  			</div>
+						  		<!------->
+									<img src="images/la-haine/la-haine.jpg" alt="la-haine" />
+									<div class="content_film_opacity"></div>
+								</div>
+							</div>
+
+							<!--The Shinning-->
+							<div class="affiche_film">
+								<div class="film_content shinning">
+									<div class="film_title_content">
+										<h3>LE 07 AOUT - 22H00</h3>
+						  			</div>
+						  		<!--div uniquement visible dans les media queries-->
+						  			<div class="film_title_content_smart">
+						  				<h3>LE 07 AOUT - 22H00</h3>
+						  			</div>
+						  		<!------->
+						  			<div class="icone_play">
+						  				<a href="shinning.html" title="Bande annonce">
+						  					<img src="images/icones/play.png" alt="play" />
+						  				</a>
+						  			</div>
+						  		<!--div uniquement visible dans les media queries-->
+						  			<div class="icone_play_smart">
+						  				<a href="shinning.html" title="Détails et synopsis">
+						  					<img src="images/icones/play.png" alt="play" />
+						  				</a>
+						  			</div>
+						  		<!------->
+									<img src="images/shinning/shinning.jpg" alt="shinning" />
+									<div class="content_film_opacity"></div>
+								</div>
+							</div>
+
+							<!--Million Dollar Baby-->
+							<div class="affiche_film">
+								<div class="film_content million-dollar-baby">
+									<div class="film_title_content">
+										<h3>LE 08 AOUT - 18H00</h3>
+						  			</div>
+						  		<!--div uniquement visible dans les media queries-->
+						  			<div class="film_title_content_smart">
+						  				<h3>LE 08 AOUT - 18H00</h3>
+						  			</div>
+						  		<!------->
+						  			<div class="icone_play">
+						  				<a href="million-dollar-baby.html" title="Bande annonce">
+						  					<img src="images/icones/play.png" alt="play" />
+						  				</a>
+						  			</div>
+						  		<!--div uniquement visible dans les media queries-->
+						  			<div class="icone_play_smart">
+						  				<a href="million-dollar-baby.html" title="Détails et synopsis">
+						  					<img src="images/icones/play.png" alt="play" />
+						  				</a>
+						  			</div>
+						  		<!------->
+									<img src="images/million-dollar-baby/million-dollar-baby.jpg" alt="million-dollar-baby" />
+									<div class="content_film_opacity"></div>
+								</div>
+							</div>
+
+							<!--Mystic River-->
+							<div class="affiche_film">
+								<div class="film_content mystic-river">
+									<div class="film_title_content">
+										<h3>LE 08 AOUT - 21H00</h3>
+						  			</div>
+						  		<!--div uniquement visible dans les media queries-->
+						  			<div class="film_title_content_smart">
+						  				<h3>LE 08 AOUT - 21H00</h3>
+						  			</div>
+						  		<!------->
+						  			<div class="icone_play">
+						  				<a href="mystic-river.html" title="Bande annonce">
+						  					<img src="images/icones/play.png" alt="play" />
+						  				</a>
+						  			</div>
+						  		<!--div uniquement visible dans les media queries-->
+						  			<div class="icone_play_smart">
+						  				<a href="mystic-river.html" title="Détails et synopsis">
+						  					<img src="images/icones/play.png" alt="play" />
+						  				</a>
+						  			</div>
+						  		<!------->
+									<img src="images/mystic-river/mystic-river.jpg" alt="mystic-river" />
+									<div class="content_film_opacity"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--Footer-->
+		<footer>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xl-2 offset-xl-2 col-md-3 col-sm-4 col-12 coordonnees">
+						<h1 class="ml-lg-4">Les Films de Plein Air</h1>
+						<p class="ml-lg-4">Adresse : <br />310 chemin des assos, <br />75000 Paris</p>
+						<p class="ml-lg-4">email : <br />contact@filmsdepleinair.org</p>
+						<p class="ml-lg-4">Tèl : <br />06 11 22 33 44</p>
+					</div>
+					<div class="col-xl-2 col-md-3 col-sm-4 col-12 partenaires">
+						<h3 class="ml-lg-4 pl-0">Nos partenaires</h3>
+						<div class="images_partenaires">
+							<div class="img_partenaires ml-lg-4"><a href="#"><img src="images/icones/ville-paris.png" /></a></div>
+							<div class="img_partenaires ml-lg-4"><a href="#"><img src="images/icones/8e_arr_paris.png" /></a></div>
+							<div class="img_partenaires ml-lg-4"><a href="#"><img src="images/icones/allocine.png" /></a></div>
+						</div>
+					</div>
+					<div class="col-xl-2 col-md-3 col-sm-4 col-12 suivez-nous">
+						<h3 class="ml-lg-4 pl-0 ml-0">Suivez-nous</h3>
+						<div class="logos_suivez-nous">
+							<div class="logo_suivez-nous ml-lg-4"><a href="#"><img src="images/icones/facebook.png" /></a></div>
+							<div class="logo_suivez-nous ml-lg-4"><a href="#"><img src="images/icones/twitter.png" /></a></div>
+							<div class="logo_suivez-nous ml-lg-4"><a href="#"><img src="images/icones/instagram.png" /></a></div>
+							<div class="logo_suivez-nous ml-lg-4"><a href="#"><img src="images/icones/youtube.png" /></a></div>
+						</div>
+					</div>
+					<div class="col-xl-2 col-md-3 col-sm-12 col-12 menu_footer">
+						<h3 class="ml-lg-4">Menu</h3>
+						<ul class="ml-lg-4">
+							<li><a href="index.html">Accueil</a></li>
+							<li><a href="actualites.html">L'Actualite</a></li>
+							<li><a href="films.html">Les films</a></li>
+							<li><a href="inscription.html">S'inscrire à une séance</a></li>
+							<li><a href="contact.html">Contactez-nous</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row row_mentions_legales">
+					<div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-12">
+						<ul class="mentions_legales">
+							<li><a href="#">Plan du site</a></li>
+							<li><a href="#">Politique de confidentialité</a></li>
+							<li><a href="#">Mention légales</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script src="bootstrap-4.4.1/dist/js/bootstrap.bundle.js"></script>
+	<script src="bootstrap-4.4.1/dist/js/bootstrap.js"></script>
+
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.list_films').slick({
+ 	 			dots: true,
+ 	 			infinite: false,
+  				slidesToShow: 5,
+  				slidesToScroll: 5,
+  				responsive: [
+  					{
+  						breakpoint: 1200,
+  						settings: {
+  							slidesToShow: 4,
+  							slidesToScroll: 4,
+  						}
+  					},
+  					{
+  						breakpoint: 992,
+  						settings: {
+  							slidesToShow: 3,
+  							slidesToScroll: 3,
+  						}
+  					},
+  					{
+  						breakpoint: 768,
+  						settings: {
+  							slidesToShow: 2,
+  							slidesToScroll: 2,
+  						}
+  					},
+  					{
+  						breakpoint: 576,
+  						settings: {
+  							slidesToShow: 1,
+  							slidesToScroll: 1,
+  						}
+  					},
+  				]
+      		});
+		});
+	</script>
+
+	</body>
+
+
+</html>

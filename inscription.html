@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+
+		<title>Inscription</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="S'inscrire pour une séance au festival Les Films de Plein Air" />
+		<meta name="keyword" content="Inscription, Les Films de Plein Air, parc Monceau, Paris, Films d'Auteurs"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+		<!--Feuille de style-->
+		<link rel="stylesheet" href="bootstrap-4.4.1/dist/css/bootstrap.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+
+	</head>
+
+	<body>
+
+		<!--Header-->
+		<header>
+			<div class="container-fluid">
+				<div class="row entete">
+
+					<div class="col-lg-6 content_logo">
+						<img src="images/logo2.png" alt="logo" id="logo" />
+					</div>
+
+					<!--div logo visible uniquement sur smartphone et tablette-->
+					<div class="col-lg-6 content_logo_smart">
+						<img src="images/logo3.png" alt="logo" id="logo" />
+					</div>
+
+					<div class="col-lg-6 content_search_icones">
+						<div class="row content_search">
+							<div class="col-lg-6 offset-lg-6 search">
+								<div class="input-group">
+									<input type="search" class="form-control" aria-label="recherche" placeholder="Rechercher" />
+									<div class="input-group-append">
+										<button type="submit" class="btn"><img src="images/icones/glyphicons-search.png" alt="rechercher" /></button>
+									</div>
+								</div>
+								<div class="icones_sociaux">
+									<a href="#"><img src="images/icones/facebook.png" alt="facebook" /></a>
+									<a href="#"><img src="images/icones/twitter.png" alt="facebook" /></a>
+									<a href="#"><img src="images/icones/instagram.png" alt="facebook" /></a>
+									<a href="#"><img src="images/icones/youtube.png" alt="facebook" /></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--Menu principal-->
+				<div class="row content_menu">
+					<div class="col-lg-12 menu">
+						<nav id="menu_principal">
+							<ul class="nav justify-content-center nav-pills">
+								<li class="nav-item">
+									<a class="nav-link" href="index.html">LE FESTIVAL</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="actualites.html">L'ACTUALITE</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="films.html">LES FILMS</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link active" href="inscription.html">S'INSCRIRE A UNE SEANCE</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="contact.html">CONTACT</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!--Section a remplir-->
+		<section id="inscription">
+			<div class="container-fluid">
+				<!--Section titre-->
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="h1-rouge-vertical"></div>
+						<div class="h1-rouge-horizontal">
+							<h1 class="titre_inscription_large">S'INSCRIRE POUR UNE SEANCE</h1>
+							<!--Visible uniquement dans les medias queries-->
+							<h1 class="titre_inscription_smart">S'INSCRIRE</h1>
+							<!------->
+							<div class="h1-rouge-h"></div>
+						</div>
+					</div>
+				</div>
+				<!--Section formulaire d'inscription-->
+				<div class="row">
+					<div class="col-lg-1">
+						<div class="inscription_rouge_vertical"></div>
+					</div>
+					<div class="col-lg-10">
+						<div class="row">
+							<form class="col-lg-8 offset-lg-2 prenom_nom_inscription">
+								<div class="col-lg-6 form-group nom_inscription">
+									<label for="nom_inscription">Votre nom : </label>
+									<input type="text" class="form-control" id="nom_inscription" aria-describedby="nom_inscription" placeholder="Votre nom" />
+								</div>
+								<div class="col-lg-6 form-group prenom_inscription">
+									<label for="prenom_inscription">Votre prénom : </label>
+									<input type="text" class="form-control" id="prenom_inscription" aria-describedby="prenom_inscription" placeholder="Votre prénom"/>
+								</div>
+							</form>
+						</div>
+						<div class="row">
+							<form class="col-lg-8 offset-lg-2 email_inscription">
+								<div class="form-group">
+									<label for="mail_inscription">Votre Email : </label>
+									<input type="email" class="form-control" id="mail_inscription" aria-describedby="nom_inscription" placeholder="Votre Email"/>
+								</div>
+							</form>
+						</div>
+						<div class="row">
+							<form class="col-lg-4 offset-lg-2 col-sm-6 col-12 inscription_dropdown">
+								<div class="form-group">
+									<div class="choix_seance dropdown">
+										<label for="choix_film">Choix de la séance :</label>
+										<a class="btn dropdown-toggle" href="#" role="button" data-toggle="dropdown" id="choix_film">Choix de la séance</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="#" onclick="changer_affiche('images/les-petits-mouchoirs/les-petits-mouchoirs.jpg'); changer_titre('Les Petits Mouchoirs','05 AOUT - 18H00','67')" >Les Petits Mouchoirs</a>
+											<a class="dropdown-item" href="#" onclick="changer_affiche('images/leon/leon.jpg'); changer_titre('Léon','05 AOUT - 20H30','130')">Léon</a>
+											<a class="dropdown-item" href="#" onclick="changer_affiche('images/sheitan/sheitan.jpg'); changer_titre('Sheitan','05 AOUT - 22H30','25')">Sheitan</a>
+											<a class="dropdown-item" href="#" onclick="changer_affiche('images/pulp-fiction/pulp-fiction.jpg'); changer_titre('Pulp Fiction','06 AOUT - 18H00','14')">Pulp Fiction</a>
+											<a class="dropdown-item" href="#" onclick="changer_affiche('images/django/django.jpg'); changer_titre('Django Unchained','06 AOUT -21H00','COMPLET')">Django Unchained</a>
+											<a class="dropdown-item" href="#" onclick="changer_affiche('images/amelie-poulain/amelie-poulain.jpg'); changer_titre('Amélie Poulain','07 AOUT - 18H00','132')">Amélie Poulain</a>
+											<a class="dropdown-item" href="#" onclick="changer_affiche('images/la-haine/la-haine.jpg'); changer_titre('La Haine','07 AOUT - 20H30','145')">La Haine</a>
+											<a class="dropdown-item" href="#" onclick="changer_affiche('images/shinning/shinning.jpg'); changer_titre('The Shinning','07 AOUT - 22H00','58')">The Shinning</a>
+											<a class="dropdown-item" href="#" onclick="changer_affiche('images/million-dollar-baby/million-dollar-baby.jpg'); changer_titre('Million Dollar Baby','08 AOUT - 18H00','3')">Million Dollar Baby</a>
+											<a class="dropdown-item" href="#" onclick="changer_affiche('images/mystic-river/mystic-river.jpg'); changer_titre('Mystic River','08 AOUT - 21H00','75')">Mystic River</a>
+										</div>
+									</div>
+								</div>
+							</form>
+							<form class="col-lg-4 col-sm-6 col-12 inscription_dropdown">
+								<div class="form-group">
+									<div class="nbr_places">
+										<label for="nombre_places">Nombre de places :</label>
+										<input type="number" id="nombre_places" name="nbr_places" min="0" max="10"/>
+									</div>
+								</div>
+							</form>
+							<div class="col-lg-4 offset-lg-2 col-sm-6 col-12 resultat">
+								<div class="inscription_affiche">
+								</div>
+							</div>
+							<div class="col-lg-4 col-sm-6 col-12 resultat">
+								<div>
+									<p class="inscription_p"><span class=" inscription_span inscription_titre1">Vous avez choisi : </span><span class="inscription_titre2"></span></p> 
+								</div>
+								<div class="mt-sm-4">
+									<span class="inscription_span inscription_date_heure"></span>
+								</div>
+								<div class="mt-sm-4">
+									<p class="inscription_p">Places restantes : <span class="inscription_places badge" id="inscription_badge"></span></p>
+								</div>
+								<div class="inscription_button">
+									<button type="button" id="button_inscription" data-toggle="modal" data-target="#confirmation_inscription" onclick="nom_email()">S'INSCRIRE</button>
+
+									<!-- Fenêtre modal de confirmation -->
+									<div class="modal fade" id="confirmation_inscription" tabindex="-1" role="dialog" aria-labelledby="Confirmation" aria-hidden="true">
+										<div class="modal-dialog" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h3 class="modal-title modal_titre_inscription">Confirmation d'inscription</h3>
+												</div>
+												<div class="modal-body">
+													<div class="col-lg-5 modal_affiche_inscription">
+														<div class="inscription_affiche inscription_affiche_confirm">
+														</div>
+													</div>
+													<div class="col-lg-7 modal_details_inscription">
+														<div>
+															<p class="inscription_p"><span class="inscription_titre2"></span></p> 
+														</div>
+														<div class="mt-4">
+															<span class="inscription_span inscription_date_heure inscription_date_heure_modal"></span>
+														</div>
+														<div class="mt-4">
+															<span class="modal_nom"></span>
+															<span class="modal_prenom"></span>
+														</div>
+														<div class="mt-4">
+															<span class="modal_email"></span>
+														</div>
+														<div class="mt-4">
+															<span>Nombre de places : </span><span class="modal_nbr_places"></span>
+														</div>
+													</div>
+												</div>
+												<div class="modal-footer">
+													<button type="button" data-dismiss="modal" class="modal_close">X</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--Footer-->
+		<footer>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xl-2 offset-xl-2 col-md-3 col-sm-4 col-12 coordonnees">
+						<h1 class="ml-lg-4">Les Films de Plein Air</h1>
+						<p class="ml-lg-4">Adresse : <br />310 chemin des assos, <br />75000 Paris</p>
+						<p class="ml-lg-4">email : <br />contact@filmsdepleinair.org</p>
+						<p class="ml-lg-4">Tèl : <br />06 11 22 33 44</p>
+					</div>
+					<div class="col-xl-2 col-md-3 col-sm-4 col-12 partenaires">
+						<h3 class="ml-lg-4 pl-0">Nos partenaires</h3>
+						<div class="images_partenaires">
+							<div class="img_partenaires ml-lg-4"><a href="#"><img src="images/icones/ville-paris.png" /></a></div>
+							<div class="img_partenaires ml-lg-4"><a href="#"><img src="images/icones/8e_arr_paris.png" /></a></div>
+							<div class="img_partenaires ml-lg-4"><a href="#"><img src="images/icones/allocine.png" /></a></div>
+						</div>
+					</div>
+					<div class="col-xl-2 col-md-3 col-sm-4 col-12 suivez-nous">
+						<h3 class="ml-lg-4 pl-0 ml-0">Suivez-nous</h3>
+						<div class="logos_suivez-nous">
+							<div class="logo_suivez-nous ml-lg-4"><a href="#"><img src="images/icones/facebook.png" /></a></div>
+							<div class="logo_suivez-nous ml-lg-4"><a href="#"><img src="images/icones/twitter.png" /></a></div>
+							<div class="logo_suivez-nous ml-lg-4"><a href="#"><img src="images/icones/instagram.png" /></a></div>
+							<div class="logo_suivez-nous ml-lg-4"><a href="#"><img src="images/icones/youtube.png" /></a></div>
+						</div>
+					</div>
+					<div class="col-xl-2 col-md-3 col-sm-12 col-12 menu_footer">
+						<h3 class="ml-lg-4">Menu</h3>
+						<ul class="ml-lg-4">
+							<li><a href="index.html">Accueil</a></li>
+							<li><a href="actualites.html">L'Actualite</a></li>
+							<li><a href="films.html">Les films</a></li>
+							<li><a href="inscription.html">S'inscrire à une séance</a></li>
+							<li><a href="contact.html">Contactez-nous</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row row_mentions_legales">
+					<div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-12">
+						<ul class="mentions_legales">
+							<li><a href="#">Plan du site</a></li>
+							<li><a href="#">Politique de confidentialité</a></li>
+							<li><a href="#">Mention légales</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script src="bootstrap-4.4.1/dist/js/bootstrap.bundle.js"></script>
+	<script src="bootstrap-4.4.1/dist/js/bootstrap.js"></script>
+
+	<script type="text/javascript">
+
+		/*Affecter au dropdown - Affiche la bonne photo en fonction du film choisi*/
+		function changer_affiche(url_affiche) {
+			$('.inscription_affiche').css('background-image', 'url("'+url_affiche+'")');
+		}
+
+		/*Affecter au dropdown - Affiche le titre, la date, et le nombre de places en fonction du film choisi et colore en gris le bouton d'inscription si c'est Complet*/
+		function changer_titre(titre_film,date_film,nbr_places) {
+			$('.inscription_titre2').html(''+titre_film+'');
+			$('.inscription_date_heure').html(''+date_film+'');
+			$('.inscription_places').html(''+nbr_places+'');
+			if (nbr_places=='COMPLET') {
+				$('#button_inscription').css('background-color', 'grey');
+				$('#button_inscription').css('color', 'white');
+			} else {
+				$('#button_inscription').css('background-color', '');
+				$('#button_inscription').css('color', '');
+			}
+		}
+
+		/*Affecter au bouton Inscription - Récupère les input pour les afficher dans la fenêtre modale - */
+		function nom_email() {
+			/*Récupère la valeur du badge (span), si COMPLET alors n'affiche pas les input*/
+			var nbr_places = document.getElementById("inscription_badge").innerHTML;
+			if (nbr_places=='COMPLET') {
+				var plus_places ="COMPLET - Vous ne pouvez pas vous inscrire";
+				$('.modal_nom').html(plus_places);
+				$('.modal_prenom').html('');
+				$('.modal_email').html('');
+				$('.modal_nbr_places').html('0');
+			/*Affiche les input*/
+			}else {
+				var nom = document.getElementById("nom_inscription").value;
+				$('.modal_nom').html(nom);
+				var prenom = document.getElementById("prenom_inscription").value;
+				$('.modal_prenom').html(prenom);
+				var email = document.getElementById("mail_inscription").value;
+				$('.modal_email').html(email);
+				var places = document.getElementById("nombre_places").value;
+				$('.modal_nbr_places').html(places);
+			}
+		} 
+	</script>
+
+	</body>
+
+</html>

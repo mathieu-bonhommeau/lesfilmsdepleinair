@@ -1,0 +1,83 @@
+html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .slider {
+        width: 100%;
+        margin: 100px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+      position: relative;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    
+    .slick-active {
+      opacity: 1;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+
+    .slick-prev{
+      width: 0;
+    }
+
+    .slick-next{
+      width: 0;
+    }
+
+    .slick-prev::before {
+    content: "";
+    }
+
+    .slick-next::before {
+    content: "";
+    }
+
+.slick-dots li button:before{
+  content: "";
+}
+
+.slick-dots li #slick-slide-control00:before{
+  content: url(../images/icones/fleche_gauche.png);
+}
+
+.slick-dots li #slick-slide-control01:before{
+  content: url(../images/icones/fleche_droite.png);
+}
+
+@media screen and (max-width: 992px){
+  .slick-dots li #slick-slide-control00:before{
+      content: "";
+  }
+
+  .slick-dots li #slick-slide-control01:before{
+    content: "";
+  }
+
+  .slick-dots li button:before{
+    background: #BF2F26;
+  }
+}

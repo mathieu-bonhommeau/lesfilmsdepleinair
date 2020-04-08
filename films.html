@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+
+		<title>Tous les films</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Tous les films présentés au festival Les Films de Plein Air" />
+		<meta name="keyword" content="Liste des films projetés, Les Films de Plein Air, parc Monceau, Paris, Films d'Auteurs"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+		<!--Feuille de style-->
+		<link rel="stylesheet" href="bootstrap-4.4.1/dist/css/bootstrap.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+
+	</head>
+
+	<body>
+
+		<!--Header-->
+		<header>
+			<div class="container-fluid">
+				<div class="row entete">
+
+					<div class="col-lg-6 content_logo">
+						<img src="images/logo2.png" alt="logo" id="logo" />
+					</div>
+
+					<!--div logo visible uniquement sur smartphone et tablette-->
+					<div class="col-lg-6 content_logo_smart">
+						<img src="images/logo3.png" alt="logo" id="logo" />
+					</div>
+
+					<div class="col-lg-6 content_search_icones">
+						<div class="row content_search">
+							<div class="col-lg-6 offset-lg-6 search">
+								<div class="input-group">
+									<input type="search" class="form-control" aria-label="recherche" placeholder="Rechercher" />
+									<div class="input-group-append">
+										<button type="submit" class="btn"><img src="images/icones/glyphicons-search.png" alt="rechercher" /></button>
+									</div>
+								</div>
+								<div class="icones_sociaux">
+									<a href="#"><img src="images/icones/facebook.png" alt="facebook" /></a>
+									<a href="#"><img src="images/icones/twitter.png" alt="facebook" /></a>
+									<a href="#"><img src="images/icones/instagram.png" alt="facebook" /></a>
+									<a href="#"><img src="images/icones/youtube.png" alt="facebook" /></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--Menu principal-->
+				<div class="row content_menu">
+					<div class="col-lg-12 menu">
+						<nav id="menu_principal">
+							<ul class="nav justify-content-center nav-pills">
+								<li class="nav-item">
+									<a class="nav-link" href="index.html">LE FESTIVAL</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="actualites.html">L'ACTUALITE</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link active" href="films.html">LES FILMS</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="inscription.html">S'INSCRIRE A UNE SEANCE</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="contact.html">CONTACT</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!--Section Liste des films-->
+		<section id="liste_films">
+			<div class="container-fluid">
+
+				<!--Titre h1-->
+				<div class="row">
+					<div class="col-md-5 col-sm-12">
+						<div class="h1-rouge-vertical"></div>
+						<div class="h1-rouge-horizontal">
+							<h1 class="titre_listfilm_large">LES FILMS DU FESTIVAL</h1>
+							<!--Visible uniquement dans les media queries-->
+							<h1 class="titre_listfilm_smart">LES FILMS</h1>
+							<!------->
+							<div class="h1-rouge-h"></div>
+						</div>
+					</div>
+
+					<!--Boutons de tri-->
+					<div class="col-md-7 col-sm-12 content_film_tri">
+						<!--Boutons de tri-->
+						<div class="film_tri">
+							<a href="#05_aout" class="mr-2 date_film">5 Août</a>
+							<a href="#06_aout" class="mr-2 date_film">6 Août</a>
+							<a href="#07_aout" class="mr-2 date_film">7 Août</a>
+							<a href="#08_aout" class="mr-2 date_film">8 Août</a>
+							<div class="dropdown mr-2">
+								<button class="dropdown-toggle" type="button" id="films_auteurs" data-toggle="dropdown">
+									Auteurs 
+								</button>
+								<div class="dropdown-menu dropdown-menu-right">
+									<a class="dropdown-item" href="#">Guillaume Canet</a>
+									<a class="dropdown-item" href="#">Luc Besson</a>
+									<a class="dropdown-item" href="#">Kim Chapiron</a>
+									<a class="dropdown-item" href="#">Quentin Tarantino</a>
+									<a class="dropdown-item" href="#">Jean Pierre Jeunet</a>
+									<a class="dropdown-item" href="#">Mathieu Kassovitz</a>
+									<a class="dropdown-item" href="#">Stanley Kubrick</a>
+									<a class="dropdown-item" href="#">Clint Eastwood</a>
+								</div>
+							</div>
+							<div class="dropdown">
+								<button class="dropdown-toggle" type="button" id="films_auteurs" data-toggle="dropdown">
+									Genre
+								</button>
+								<div class="dropdown-menu dropdown-menu-right">
+									<a class="dropdown-item" href="#">Comédie</a>
+									<a class="dropdown-item" href="#">Policier</a>
+									<a class="dropdown-item" href="#">Drame</a>
+									<a class="dropdown-item" href="#">Thriller</a>
+									<a class="dropdown-item" href="#">Horreur</a>
+									<a class="dropdown-item" href="#">Western</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--Les films du 05 Août-->
+				<div class="row" id="05_aout">
+					<div class="col-lg-12">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="h2_rouge_horizontal">
+									<h2>SOIREE DU 05 AOUT 2020</h2>
+									<div class="h2_rouge_h"></div>
+								</div>
+							</div>
+						</div>
+						<div class="row soiree">
+							<div class="col-lg-1">
+								<div class="films_rouge_vertical"></div>
+							</div>
+
+							<!--Les Petits Mouchoirs-->
+							<div class="col-lg-3">
+								<h2>18H00</h2>
+								<div class="film_container">
+									<div class="details">
+						  				<a href="les_petits_mouchoirs.html" title="Bande annonce">SYNOPSIS ET DETAILS</a>	
+						  			</div>
+						  		<!--Uniquement visible dans les medias queries-->
+						  			<div class="details_smart">
+						  				<a href="les_petits_mouchoirs.html" title="Bande annonce">SYNOPSIS ET DETAILS</a>	
+						  			</div>
+						  		<!------------>
+									<img src="images/les-petits-mouchoirs/les-petits-mouchoirs.jpg" alt="les-petits-mouchoirs" />
+									<div class="content_film_opacity"></div>
+								</div>
+								<div class="inscription_seance mt-4"><a href="inscription.html" title="S'inscrire">S'INSCRIRE</a></div>
+								<p class="mt-4">Nombre de places restantes :<span class="badge mx-4">67</span></p>
+							</div>
+
+							<!--Léon-->
+							<div class="col-lg-3">
+								<h2>20H30</h2>
+								<div class="film_container">
+									<div class="details">
+						  				<a href="leon.html" title="Bande annonce">SYNOPSIS ET DETAILS</a>	
+						  			</div>
+						  		<!--Uniquement visible dans les medias queries-->
+						  			<div class="details_smart">
+						  				<a href="leon.html" title="Bande annonce">SYNOPSIS ET DETAILS</a>	
+						  			</div>
+						  		<!------------>
+									<img src="images/leon/leon.jpg" alt="leon" />
+									<div class="content_film_opacity"></div>
+								</div>
+								<div class="inscription_seance mt-4"><a href="inscription.html" title="S'inscrire">S'INSCRIRE</a></div>
+								<p class="mt-4">Nombre de places restantes :<span class="badge mx-4">130</span></p>
+							</div>
+
+							<!--Sheitan-->
+							<div class="col-lg-3">
+								<h2>22H30</h2>
+								<div class="film_container">
+									<div class="details">
+						  				<a href="sheitan.html" title="Bande annonce">SYNOPSIS ET DETAILS</a>	
+						  			</div>
+						  		<!--Uniquement visible dans les medias queries-->
+						  			<div class="details_smart">
+						  				<a href="sheitan.html" title="Bande annonce">SYNOPSIS ET DETAILS</a>	
+						  			</div>
+						  		<!------------>
+									<img src="images/sheitan/sheitan.jpg" alt="sheitan" />
+									<div class="content_film_opacity"></div>
+								</div>
+								<div class="inscription_seance mt-4"><a href="inscription.html" title="S'inscrire">S'INSCRIRE</a></div>
+								<p class="mt-4">Nombre de places restantes :<span class="badge mx-4">25</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--Les films du 06 Août-->
+				<div class="row" id="06_aout">
+					<div class="col-lg-12">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="h2_rouge_horizontal">
+									<h2>SOIREE DU 06 AOUT 2020</h2>
+									<div class="h2_rouge_h"></div>
+								</div>
+							</div>
+						</div>
+						<div class="row soiree">
+							<div class="col-lg-1">
+								<div class="films_rouge_vertical"></div>
+							</div>
+
+							<!--Pulp Fiction-->
+							<div class="col-lg-3">
+								<h2>18H00</h2>
+								<div class="film_container">
+									<div class="details">
+						  				<a href="pulp-fiction.html" title="Bande annonce">SYNOPSIS ET DETAILS</a>	
+						  			</div>
+						  		<!--Uniquement visible dans les medias queries-->
+						  			<div class="details_smart">
+						  				<a href="pulp-fiction.html" title="Bande annonce">SYNOPSIS ET DETAILS</a>
+						  			</div>
+						  		<!------------>
+									<img src="images/pulp-fiction/pulp-fiction.jpg" alt="pulp-fiction" />
+									<div class="content_film_opacity"></div>
+								</div>
+								<div class="inscription_seance mt-4"><a href="inscription.html" title="S'inscrire">S'INSCRIRE</a></div>
+								<p class="mt-4">Nombre de places restantes :<span class="badge mx-4">14</span></p>
+							</div>
+
+							<!--Django Unchained-->
+							<div class="col-lg-3 django">
+								<h2>21H00</h2>
+								<div class="film_container django_container">
+									<div class="details">
+						  				<a href="django.html" title="Bande annonce">SYNOPSIS ET DETAILS</a>	
+						  			</div>
+						  		<!--Uniquement visible dans les medias queries-->
+						  			<div class="details_smart">
+						  				<a href="django.html" title="Bande annonce">SYNOPSIS ET DETAILS</a>	
+						  			</div>
+						  		<!------------>
+						  			<div class="film_complet">
+						  				<img src="images/icones/complet.png" alt="complet" />
+						  			</div>
+									<img src="images/django/django.jpg" alt="django" />
+									<div class="content_film_opacity"></div>
+								</div>
+								<div class="inscription_seance mt-4"><a href="#06_aout" title="S'inscrire">S'INSCRIRE</a></div>
+								<p class="mt-4">Nombre de places restantes :<span class="badge mx-4">0</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--Les films du 07 Août-->
+				<div class="row" id="07_aout">
+					<div class="col-lg-12">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="h2_rouge_horizontal">
+									<h2>SOIREE DU 07 AOUT 2020</h2>
+									<div class="h2_rouge_h"></div>
+								</div>
+							</div>
+						</div>
+						<div class="row soiree">
+							<div class="col-lg-1">
+								<div class="films_rouge_vertical"></div>
+							</div>
+
+							<!--Le Fabuleux Destin d'Amelie Poulain-->
+							<div class="col-lg-3">
+								<h2>18H00</h2>
+								<div class="film_container">
+									<div class="details">
+						  				<a href="amelie-poulain.html" title="Bande annonce">SYNOPSIS ET DETAILS</a>	
+						  			</div>
+						  		<!--Uniquement visible dans les medias queries-->
+						  			<div class="details_smart">
+						  				<a href="amelie-poulain.html" title="Bande annonce">SYNOPSIS ET DETAILS</a>	
+						  			</div>
+						  		<!------------>
+									<img src="images/amelie-poulain/amelie-poulain.jpg" alt="amelie-poulain" />
+									<div class="content_film_opacity"></div>
+								</div>
+								<div class="inscription_seance mt-4"><a href="inscription.html" title="S'inscrire">S'INSCRIRE</a></div>
+								<p class="mt-4">Nombre de places restantes :<span class="badge mx-4">132</span></p>
+							</div>
+
+							<!--La Haine-->
+							<div class="col-lg-3">
+								<h2>20H30</h2>
+								<div class="film_container">
+									<div class="details">
+						  				<a href="la-haine.html" title="Bande annonce">SYNOPSIS ET DETAILS</a>	
+						  			</div>
+						  		<!--Uniquement visible dans les medias queries-->
+						  			<div class="details_smart">
+						  				<a href="la-haine.html" title="Bande annonce">SYNOPSIS ET DETAILS</a>
+						  			</div>
+						  		<!------------>
+									<img src="images/la-haine/la-haine.jpg" alt="la-haine" />
+									<div class="content_film_opacity"></div>
+								</div>
+								<div class="inscription_seance mt-4"><a href="inscription.html" title="S'inscrire">S'INSCRIRE</a></div>
+								<p class="mt-4">Nombre de places restantes :<span class="badge mx-4">145</span></p>
+							</div>
+
+							<!--The Shinning-->
+							<div class="col-lg-3">
+								<h2>22H00</h2>
+								<div class="film_container">
+									<div class="details">
+						  				<a href="shinning.html" title="Bande annonce">SYNOPSIS ET DETAILS</a>	
+						  			</div>
+						  		<!--Uniquement visible dans les medias queries-->
+						  			<div class="details_smart">
+						  				<a href="shinning.html" title="Bande annonce">SYNOPSIS ET DETAILS</a>	
+						  			</div>
+						  		<!------------>
+									<img src="images/shinning/shinning.jpg" alt="shinning" />
+									<div class="content_film_opacity"></div>
+								</div>
+								<div class="inscription_seance mt-4"><a href="inscription.html" title="S'inscrire">S'INSCRIRE</a></div>
+								<p class="mt-4">Nombre de places restantes :<span class="badge mx-4">58</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--Les films du 08 Août-->
+				<div class="row" id="08_aout">
+					<div class="col-lg-12">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="h2_rouge_horizontal">
+									<h2>SOIREE DU 08 AOUT 2020</h2>
+									<div class="h2_rouge_h"></div>
+								</div>
+							</div>
+						</div>
+						<div class="row soiree">
+							<div class="col-lg-1">
+								<div class="films_rouge_vertical"></div>
+							</div>
+
+							<!--Million Dollar Baby-->
+							<div class="col-lg-3">
+								<h2>18H00</h2>
+								<div class="film_container">
+									<div class="details">
+						  				<a href="million-dollar-baby.html" title="Bande annonce">SYNOPSIS ET DETAILS</a>	
+						  			</div>
+						  		<!--Uniquement visible dans les medias queries-->
+						  			<div class="details_smart">
+						  				<a href="million-dollar-baby.html" title="Bande annonce">SYNOPSIS ET DETAILS</a>	
+						  			</div>
+						  		<!------------>
+									<img src="images/million-dollar-baby/million-dollar-baby.jpg" alt="million-dollar-baby" />
+									<div class="content_film_opacity"></div>
+								</div>
+								<div class="inscription_seance mt-4"><a href="inscription.html" title="S'inscrire">S'INSCRIRE</a></div>
+								<p class="mt-4">Nombre de places restantes :<span class="badge mx-4">3</span></p>
+							</div>
+
+							<!--Mystic River-->
+							<div class="col-lg-3">
+								<h2>21H00</h2>
+								<div class="film_container">
+									<div class="details">
+						  				<a href="mystic-river.html" title="Bande annonce">SYNOPSIS ET DETAILS</a>	
+						  			</div>
+						  		<!--Uniquement visible dans les medias queries-->
+						  			<div class="details_smart">
+						  				<a href="mystic-river.html" title="Bande annonce">SYNOPSIS ET DETAILS</a>	
+						  			</div>
+						  		<!------------>
+									<img src="images/mystic-river/mystic-river.jpg" alt="mystic-river" />
+									<div class="content_film_opacity"></div>
+								</div>
+								<div class="inscription_seance mt-4"><a href="inscription.html" title="S'inscrire">S'INSCRIRE</a></div>
+								<p class="mt-4">Nombre de places restantes :<span class="badge mx-4">75</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--Footer-->
+		<footer>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xl-2 offset-xl-2 col-md-3 col-sm-4 col-12 coordonnees">
+						<h1 class="ml-lg-4">Les Films de Plein Air</h1>
+						<p class="ml-lg-4">Adresse : <br />310 chemin des assos, <br />75000 Paris</p>
+						<p class="ml-lg-4">email : <br />contact@filmsdepleinair.org</p>
+						<p class="ml-lg-4">Tèl : <br />06 11 22 33 44</p>
+					</div>
+					<div class="col-xl-2 col-md-3 col-sm-4 col-12 partenaires">
+						<h3 class="ml-lg-4 pl-0">Nos partenaires</h3>
+						<div class="images_partenaires">
+							<div class="img_partenaires ml-lg-4"><a href="#"><img src="images/icones/ville-paris.png" /></a></div>
+							<div class="img_partenaires ml-lg-4"><a href="#"><img src="images/icones/8e_arr_paris.png" /></a></div>
+							<div class="img_partenaires ml-lg-4"><a href="#"><img src="images/icones/allocine.png" /></a></div>
+						</div>
+					</div>
+					<div class="col-xl-2 col-md-3 col-sm-4 col-12 suivez-nous">
+						<h3 class="ml-lg-4 pl-0 ml-0">Suivez-nous</h3>
+						<div class="logos_suivez-nous">
+							<div class="logo_suivez-nous ml-lg-4"><a href="#"><img src="images/icones/facebook.png" /></a></div>
+							<div class="logo_suivez-nous ml-lg-4"><a href="#"><img src="images/icones/twitter.png" /></a></div>
+							<div class="logo_suivez-nous ml-lg-4"><a href="#"><img src="images/icones/instagram.png" /></a></div>
+							<div class="logo_suivez-nous ml-lg-4"><a href="#"><img src="images/icones/youtube.png" /></a></div>
+						</div>
+					</div>
+					<div class="col-xl-2 col-md-3 col-sm-12 col-12 menu_footer">
+						<h3 class="ml-lg-4">Menu</h3>
+						<ul class="ml-lg-4">
+							<li><a href="index.html">Accueil</a></li>
+							<li><a href="actualites.html">L'Actualite</a></li>
+							<li><a href="films.html">Les films</a></li>
+							<li><a href="inscription.html">S'inscrire à une séance</a></li>
+							<li><a href="contact.html">Contactez-nous</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row row_mentions_legales">
+					<div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-12">
+						<ul class="mentions_legales">
+							<li><a href="#">Plan du site</a></li>
+							<li><a href="#">Politique de confidentialité</a></li>
+							<li><a href="#">Mention légales</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script src="bootstrap-4.4.1/dist/js/bootstrap.bundle.js"></script>
+	<script src="bootstrap-4.4.1/dist/js/bootstrap.js"></script>
+
+	</body>
+
+</html>
